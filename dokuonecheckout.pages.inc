@@ -18,10 +18,6 @@ if ( isset($_GET['task']) )
 										die;
 								}
 															 
-								if (substr($this->getipaddress(),0,strlen($this->ip_range)) !== $this->ip_range)
-								{
-										echo "Stop : IP Not Allowed : ".getipaddress();
-								}
 								else
 								{	    
 									$channel=$configarray[$_POST['PAYMENTCHANNEL']];
